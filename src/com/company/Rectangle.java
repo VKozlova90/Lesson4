@@ -6,14 +6,24 @@ public class Rectangle {
     double y;
 
     public Rectangle (double x, double y){
-        System.out.println("Прямоугольник со сторонами:"+"x" + " "+"y");
+        this.x = x;
+        this.y = y;
         }
-    if (x==y){
-        System.out.println("Квадрат со стороной:"+"x");
+
+    public double calculateArea (){
+        return x*y;
     }
-    double calculateArea ();
-    double result = x*y;
-    return result;
+    public String printArea (){
+        return ("Площадь прямоугольника:" + calculateArea());
+    }
+    public String printRectangleKind(){
+        if (x==y) {
+            return ("Это квадрат");
+        }
+        else {
+            return ("Это прямоугольник");
+        }
+    }
 
     }
 
