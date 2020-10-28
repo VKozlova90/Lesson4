@@ -10,20 +10,35 @@ public class Rectangle {
         this.y = y;
         }
 
+        /*public Rectangle22 (double x){
+        this.x = x;
+        this.y = x;
+    }
+*/
     public double calculateArea (){
         return x*y;
     }
     public String printArea (){
-        return ("Площадь прямоугольника:" + calculateArea());
+        return "Площадь прямоугольника:" + calculateArea();
     }
     public String printRectangleKind(){
         if (x==y) {
-            return ("Это квадрат");
+            return "Это квадрат";
         }
         else {
-            return ("Это прямоугольник");
+            return "Это прямоугольник";
+        }
+    }
+
+    public boolean isTheSameRectangle(Rectangle){
+        if (x==Rectangle && y==Rectangle) {
+            return true;
+        }
+        else {
+            return false;
         }
     }
 
     }
+
 
