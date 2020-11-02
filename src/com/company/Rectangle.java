@@ -1,18 +1,23 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Rectangle {
 
     double x;
     double y;
+    private int createdRectangles;
 
     public Rectangle (double x, double y){
         this.x = x;
         this.y = y;
+        createdRectangles+= 1;
         }
 
         /*public Rectangle22 (double x){
         this.x = x;
         this.y = x;
+       createdRectangles+=1;
     }
 */
     public double calculateArea (){
@@ -30,15 +35,15 @@ public class Rectangle {
         }
     }
 
-    public boolean isTheSameRectangle(Rectangle){
-        if (x==Rectangle && y==Rectangle) {
-            return true;
-        }
-        else {
-            return false;
+    //public boolean isTheSameRectangle(Rectangle rectangle){
+       // return x.equals(Rectangle.x) && y.equals(Rectangle.y);
+       // }
+
+    public String printRectanglesCount (){
+        return ("Всего было создано" + " " + createdRectangles + " " + "прямоугольников");
+
         }
     }
 
-    }
 
 

@@ -7,22 +7,16 @@ public class Main {
         System.out.println(rectangle1.calculateArea());
         System.out.println(rectangle1.printArea());
         System.out.println(rectangle1.printRectangleKind());
+        System.out.println(rectangle1.printRectanglesCount());
 
 
         Rectangle rectangle2 = new Rectangle(2,2);
         System.out.println(rectangle2.calculateArea());
         System.out.println(rectangle2.printArea());
         System.out.println(rectangle2.printRectangleKind());
+        System.out.println(rectangle2.printRectanglesCount());
 
-        Rectangle rectangle3 = new Rectangle(1,3);
-        System.out.println(rectangle3.isTheSameRectangle());
-
-
-
-
-
-
-
+        //System.out.println (rectangle1.isTheSameRectangle (rectangle2));
 
 
 
