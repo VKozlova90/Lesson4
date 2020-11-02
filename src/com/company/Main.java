@@ -1,24 +1,32 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
-        Rectangle rectangle1 = new Rectangle(2,6);
+        Rectangle rectangle1 = new Rectangle(2, 6);
         System.out.println(rectangle1.calculateArea());
         System.out.println(rectangle1.printArea());
         System.out.println(rectangle1.printRectangleKind());
-        System.out.println(rectangle1.printRectanglesCount());
+       // System.out.println(rectangle1.isTheSameRectangle());
+        rectangle1.printRectanglesCount();
+        rectangle1.printClassName (true);
+       // System.out.println(Rectangle.printClassName(true));
 
 
-        Rectangle rectangle2 = new Rectangle(2,2);
+
+        Rectangle rectangle2 = new Rectangle(2, 2);
         System.out.println(rectangle2.calculateArea());
         System.out.println(rectangle2.printArea());
         System.out.println(rectangle2.printRectangleKind());
-        System.out.println(rectangle2.printRectanglesCount());
+        //System.out.println(rectangle1.isTheSameRectangle());
+        rectangle1.printRectanglesCount();
 
-        //System.out.println (rectangle1.isTheSameRectangle (rectangle2));
 
 
 
     }
 }
+
+

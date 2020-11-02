@@ -1,23 +1,27 @@
 package com.company;
 
-import java.util.Objects;
-
 public class Rectangle {
 
+    private static boolean printInRussian;
     double x;
     double y;
-    private int createdRectangles;
+
+    static private int createdRectangles;
+
+    private final static String RUSSIAN_CLASS_NAME = "Прямоугольник";
+    private final static String ENGLISH_CLASS_NAME = "Rectangle";
+
 
     public Rectangle (double x, double y){
         this.x = x;
         this.y = y;
-        createdRectangles+= 1;
+        createdRectangles++;
         }
 
-        /*public Rectangle22 (double x){
+    /*public Rectangle (double x){
         this.x = x;
         this.y = x;
-       createdRectangles+=1;
+       createdRectangles++;
     }
 */
     public double calculateArea (){
@@ -35,15 +39,26 @@ public class Rectangle {
         }
     }
 
-    //public boolean isTheSameRectangle(Rectangle rectangle){
-       // return x.equals(Rectangle.x) && y.equals(Rectangle.y);
-       // }
-
-    public String printRectanglesCount (){
-        return ("Всего было создано" + " " + createdRectangles + " " + "прямоугольников");
+    /*public boolean isTheSameRectangle(Rectangle rectangle){
+       return x==rectangle.x && y==rectangle.y;
+        }
+*/
+    public void printRectanglesCount (){
+        System.out.println ("Всего было создано " + createdRectangles + " прямоугольник(а)");
 
         }
+        public static String printClassName (boolean printInRussian){
+
+            if (Rectangle.printInRussian =true) {
+               return "Прямоугольник";
+               }
+
+        else {
+               return "Rectangle";
+                }
+        }
     }
+
 
 
 
