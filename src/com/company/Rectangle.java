@@ -10,6 +10,7 @@ public class Rectangle {
 
     private final static String RUSSIAN_CLASS_NAME = "Прямоугольник";
     private final static String ENGLISH_CLASS_NAME = "Rectangle";
+    private Rectangle rectangle;
 
 
     public Rectangle (double x, double y){
@@ -39,10 +40,11 @@ public class Rectangle {
         }
     }
 
-    /*public boolean isTheSameRectangle(Rectangle rectangle){
-       return x==rectangle.x && y==rectangle.y;
+    public boolean isTheSameRectangle(Rectangle rectangle){
+        this.rectangle = rectangle;
+        return x==rectangle.x && y==rectangle.y;
         }
-*/
+
     public void printRectanglesCount (){
         System.out.println ("Всего было создано " + createdRectangles + " прямоугольник(а)");
 
