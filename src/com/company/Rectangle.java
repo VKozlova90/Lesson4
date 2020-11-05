@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Rectangle {
 
     private static boolean printInRussian;
@@ -19,12 +21,12 @@ public class Rectangle {
         createdRectangles++;
         }
 
-    /*public Rectangle (double x){
-        this.x = x;
-        this.y = x;
-       createdRectangles++;
-    }
-*/
+//    public RectangleKV (double x){
+//        this.x = x;
+//        this.y = x;
+//       createdRectangles++;
+//    }
+
     public double calculateArea (){
         return x*y;
     }
@@ -41,8 +43,8 @@ public class Rectangle {
     }
 
     public boolean isTheSameRectangle(Rectangle rectangle){
-        this.rectangle = rectangle;
-        return x==rectangle.x && y==rectangle.y;
+        //this.rectangle = rectangle;
+        return this.x==rectangle.x && this.y==rectangle.y;
         }
 
     public void printRectanglesCount (){
@@ -51,12 +53,12 @@ public class Rectangle {
         }
         public static String printClassName (boolean printInRussian){
 
-            if (Rectangle.printInRussian =true) {
-               return "Прямоугольник";
+            if (printInRussian =true) {
+                return RUSSIAN_CLASS_NAME;
                }
 
         else {
-               return "Rectangle";
+                return ENGLISH_CLASS_NAME;
                 }
         }
     }
