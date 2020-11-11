@@ -53,10 +53,10 @@ public class Rectangle {
 
     public static void printClassName(boolean printInRussian) {
 
-        if (printInRussian = true) {
+        if (printInRussian) {
             System.out.println(RUSSIAN_CLASS_NAME);
         }
-        if (printInRussian = false) {
+        else  {
             System.out.println(ENGLISH_CLASS_NAME);
         }
     }
