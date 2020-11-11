@@ -21,11 +21,11 @@ public class Rectangle {
         createdRectangles++;
         }
 
-//    public RectangleKV (double x){
-//        this.x = x;
-//        this.y = x;
-//       createdRectangles++;
-//    }
+     public Rectangle(double x){
+        this.x = x;
+        this.y = x;
+      createdRectangles++;
+    }
 
     public double calculateArea (){
         return x*y;
@@ -57,7 +57,7 @@ public class Rectangle {
                 return RUSSIAN_CLASS_NAME;
                }
 
-        else {
+            if (printInRussian = false){
                 return ENGLISH_CLASS_NAME;
                 }
         }
