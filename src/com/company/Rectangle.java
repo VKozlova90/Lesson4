@@ -1,10 +1,7 @@
 package com.company;
 
-import java.util.Objects;
-
 public class Rectangle {
 
-    private static boolean printInRussian;
     double x;
     double y;
 
@@ -15,26 +12,28 @@ public class Rectangle {
     private Rectangle rectangle;
 
 
-    public Rectangle (double x, double y){
+    public Rectangle(double x, double y) {
         this.x = x;
         this.y = y;
         createdRectangles++;
-        }
+    }
 
-     public Rectangle(double x){
+    public Rectangle(double x) {
         this.x = x;
         this.y = x;
-      createdRectangles++;
+        createdRectangles++;
     }
 
-    public double calculateArea (){
-        return x*y;
+    public double calculateArea() {
+        return x * y;
     }
-    public String printArea (){
+
+    public String printArea() {
         return "Площадь прямоугольника:" + calculateArea();
     }
-    public String printRectangleKind(){
-        if (x==y) {
+
+    public String printRectangleKind() {
+        if (x == y) {
             return "Это квадрат";
         }
         else {
@@ -42,26 +41,26 @@ public class Rectangle {
         }
     }
 
-    public boolean isTheSameRectangle(Rectangle rectangle){
+    public boolean isTheSameRectangle(Rectangle rectangle) {
         //this.rectangle = rectangle;
-        return this.x==rectangle.x && this.y==rectangle.y;
+        return this.x == rectangle.x && this.y == rectangle.y;
+    }
+
+    public void printRectanglesCount() {
+        System.out.println("Всего было создано " + createdRectangles + " прямоугольник(а)");
+
+    }
+
+    public static void printClassName(boolean printInRussian) {
+
+        if (printInRussian = true) {
+            System.out.println(RUSSIAN_CLASS_NAME);
         }
-
-    public void printRectanglesCount (){
-        System.out.println ("Всего было создано " + createdRectangles + " прямоугольник(а)");
-
-        }
-        public static String printClassName (boolean printInRussian){
-
-            if (printInRussian =true) {
-                return RUSSIAN_CLASS_NAME;
-               }
-
-            if (printInRussian = false){
-                return ENGLISH_CLASS_NAME;
-                }
+        if (printInRussian = false) {
+            System.out.println(ENGLISH_CLASS_NAME);
         }
     }
+}
 
 
 

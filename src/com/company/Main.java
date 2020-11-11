@@ -2,6 +2,8 @@ package com.company;
 
 import java.util.Random;
 
+import static com.company.Rectangle.printClassName;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class Main {
         System.out.println(rectangle1.printRectangleKind());
         System.out.println(rectangle1.isTheSameRectangle(rectangle1));
         rectangle1.printRectanglesCount();
-        System.out.println(rectangle1.printClassName(true));
+        Rectangle.printClassName(true);
 
         System.out.println(" ");
 
@@ -23,7 +25,7 @@ public class Main {
         System.out.println(rectangle2.printRectangleKind());
         System.out.println(rectangle2.isTheSameRectangle(rectangle1));
         rectangle2.printRectanglesCount();
-        System.out.println(rectangle2.printClassName(false));
+        Rectangle.printClassName(false);
 
         System.out.println(" ");
 
@@ -32,7 +34,7 @@ public class Main {
         System.out.println(rectangle3.printRectangleKind());
         System.out.println(rectangle3.isTheSameRectangle(rectangle2));
         rectangle3.printRectanglesCount();
-        System.out.println(rectangle3.printClassName(false));
+        Rectangle.printClassName(true);
 
 
     }
